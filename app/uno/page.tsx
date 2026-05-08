@@ -1,6 +1,10 @@
 import Link from "next/link"
 import Props from "./props"
+import { useAppContext
+
+ } from "../contexto/AppContex";
 export default function Uno() {
+    const { nombre } = useAppContext();
   return (
     <div >
       <Link href="/">Boton home</Link>
